@@ -1,0 +1,19 @@
+// config/env/test.js
+console.log('config/env/test.js');//, new Date(new Date().getTime()).toString());
+
+module.exports = {
+	env: 'test',
+	db: 'mongodb://localhost/contatooh_test',
+	sauceTestName: 'Contatooh E2E Testing',
+	sauceUser : process.env.SAUCE_USERNAME,
+	sauceKey : process.env.SAUCE_ACCESS_KEY,
+	travisJobNumber: process.env.TRAVIS_JOB_NUMBER,
+	travisBuild: process.env.TRAVIS_BUILD_NUMBER,
+	clientID: process.env.CLIENT_ID,
+	clientSecret: process.env.CLIENT_SECRET,
+	seleniumUser: process.env.SELENIUM_USER,
+	seleniumUserPassword: process.env.SELENIUM_USER_PASSWORD,
+	port: 3000,
+	address: 'localhost',
+	domain: 'localhost'
+};
